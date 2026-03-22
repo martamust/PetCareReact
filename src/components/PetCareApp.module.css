@@ -1,0 +1,176 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header {
+  text-align: center;
+  background: linear-gradient(135deg, #fde4f0 0%, #e8f4f8 100%);
+  border: 2px solid #f0b3d9;
+  border-radius: 20px;
+  padding: 40px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 32px rgba(240, 179, 217, 0.2);
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #d97bb1;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #8b6b94;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.statsGlobales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.puntos {
+  background: linear-gradient(135deg, #fff9e6 0%, #ffe8b6 100%);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #8b7333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(255, 232, 182, 0.3);
+  border: 2px solid #ffe8b6;
+}
+
+.icono {
+  font-size: 20px;
+}
+
+.valor {
+  font-size: 18px;
+}
+
+.btnReset {
+  background: linear-gradient(135deg, #d97bb1 0%, #c367a1 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(217, 123, 177, 0.3);
+}
+
+.btnReset:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(217, 123, 177, 0.4);
+}
+
+.btnReset:active {
+  transform: translateY(0);
+}
+
+.infoReset {
+  background: rgba(217, 123, 177, 0.15);
+  border-left: 4px solid #d97bb1;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #8b6b94;
+}
+
+.infoReset p {
+  margin: 0;
+}
+
+.legend {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 2px solid rgba(217, 123, 177, 0.2);
+}
+
+.legendGroup h3 {
+  color: #d97bb1;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #8b6b94;
+  margin: 8px 20px 8px 0;
+}
+
+.redDot,
+.grayDot,
+.greenDot,
+.orangeDot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.redDot {
+  background-color: #ffb3d9;
+}
+
+.grayDot {
+  background-color: #c9b9d6;
+}
+
+.greenDot {
+  background-color: #b3e5b3;
+}
+
+.orangeDot {
+  background-color: #ffc9a3;
+}
+
+.petsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 25px 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .statsGlobales {
+    gap: 15px;
+  }
+
+  .puntos {
+    font-size: 14px;
+  }
+
+  .petsGrid {
+    grid-template-columns: 1fr;
+  }
+}

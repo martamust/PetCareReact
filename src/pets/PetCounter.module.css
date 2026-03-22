@@ -1,0 +1,193 @@
+.petCard {
+  background: linear-gradient(135deg, #fff5f9 0%, #f0e8f8 100%);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(217, 123, 177, 0.15);
+  transition: all 0.3s ease;
+  border: 2px solid #f0b3d9;
+}
+
+.petCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(217, 123, 177, 0.2);
+  border-color: #d97bb1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.emojiGrande {
+  font-size: 64px;
+  min-width: 70px;
+}
+
+.infoHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nombre {
+  margin: 0;
+  font-size: 24px;
+  color: #d97bb1;
+  font-weight: bold;
+}
+
+.estadoEmoji {
+  font-size: 32px;
+}
+
+.barraProgreso {
+  width: 100%;
+  height: 12px;
+  background: #e8d4e8;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.barra {
+  height: 100%;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.saludTexto {
+  text-align: center;
+  color: #8b6b94;
+  font-size: 13px;
+  margin: 0 0 16px 0;
+  font-weight: 600;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.stat {
+  background: #f9f4fb;
+  border: 2px solid #e8d4e8;
+  border-radius: 12px;
+  padding: 12px;
+  transition: all 0.3s;
+}
+
+.stat.critico {
+  background: rgba(255, 179, 217, 0.15);
+  border-color: #ffb3d9;
+}
+
+.stat.bajo {
+  background: rgba(255, 179, 217, 0.15);
+  border-color: #ffb3d9;
+}
+
+.stat.normal {
+  background: rgba(201, 185, 214, 0.15);
+  border-color: #c9b9d6;
+}
+
+.stat.optimo {
+  background: rgba(179, 229, 179, 0.15);
+  border-color: #b3e5b3;
+}
+
+.stat.exceso {
+  background: rgba(255, 201, 163, 0.15);
+  border-color: #ffc9a3;
+}
+
+.etiqueta {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #8b6b94;
+  margin-bottom: 8px;
+}
+
+.controles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.btnMas,
+.btnMenos {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.btnMas {
+  background-color: #b3e5b3;
+  color: #5a9a5a;
+}
+
+.btnMas:hover {
+  background-color: #99d99a;
+  transform: scale(1.05);
+}
+
+.btnMenos {
+  background-color: #ffb3d9;
+  color: #d97bb1;
+}
+
+.btnMenos:hover {
+  background-color: #ff99cc;
+  transform: scale(1.05);
+}
+
+.valor {
+  font-weight: bold;
+  color: #8b6b94;
+  min-width: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.puntosDiarios {
+  background: linear-gradient(135deg, #fff9e6 0%, #ffe8b6 100%);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #8b7333;
+  font-size: 13px;
+  box-shadow: 0 2px 8px rgba(255, 232, 182, 0.2);
+  border: 1px solid #ffe8b6;
+}
+
+@media (max-width: 480px) {
+  .petCard {
+    padding: 16px;
+  }
+
+  .emojiGrande {
+    font-size: 48px;
+    min-width: 55px;
+  }
+
+  .nombre {
+    font-size: 18px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
